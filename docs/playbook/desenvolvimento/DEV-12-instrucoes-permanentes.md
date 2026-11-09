@@ -1,8 +1,8 @@
 # DEV-12 — Instruções Permanentes e Independência de Plataforma
 
 **Pilar:** 03 — Desenvolvimento  
-**Versão:** 1.2 — revisão pontual proposta  
-**Status:** Revisão pontual em validação — versão anterior preservada  
+**Versão:** 1.2  
+**Status:** Aprovado  
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia AI Development Playbook.
 
 ---
@@ -391,18 +391,27 @@ Uma estrutura possível para o projeto será:
 projeto/
 ├── CLAUDE.md                # Quando aplicável
 ├── AGENTS.md                # Quando aplicável
+├── Specs/                   # SPECs, REQs, histórico funcional e handoffs (COP-01, seção 21)
+│   ├── SPEC-xxx-nome/
+│   │   ├── spec.md
+│   │   ├── history.md
+│   │   └── requests/
+│   └── sessions/
+├── Skills/                  # Skills operacionais playbook-* (COP-01, seção 21)
 ├── docs/
 │   ├── playbook/            # Cópia local da versão aprovada
 │   │   ├── README.md
-│   │   ├── BOOTSTRAP.md      # Quando incluído na distribuição
+│   │   ├── BOOTSTRAP.md     # Quando incluído na distribuição
 │   │   ├── MANIFEST.md      # Quando incluído na distribuição
 │   │   ├── produto/
 │   │   ├── arquitetura/
-│   │   └── desenvolvimento/
-│   ├── produto/
-│   ├── arquitetura/
-│   ├── historico/
-│   └── sessoes/
+│   │   ├── desenvolvimento/
+│   │   └── operacional/
+│   ├── produto/             # Visão e documentação de produto do projeto
+│   ├── arquitetura/         # Documentação de arquitetura do projeto
+│   ├── decisoes/            # Decisões arquiteturais e técnicas (ARQ-04, DEV-11)
+│   ├── incidentes/          # Incidentes relevantes (DEV-11)
+│   └── riscos/              # Riscos relevantes (DEV-11)
 └── src/
 ```
 
@@ -411,6 +420,8 @@ Essa estrutura é ilustrativa, exceto pela localização convencionada para a c�
 Arquivos auxiliares como `BOOTSTRAP.md` e `MANIFEST.md`, quando publicados oficialmente, poderão orientar a inicialização e identificar os documentos obrigatórios e a versão. Não deverão impor instalação automática ou acesso remoto contínuo.
 
 A cópia local da metodologia deverá permanecer distinta da documentação específica do produto e da arquitetura do projeto.
+
+Registros operacionais de requisições (SPECs, REQs, histórico funcional e handoffs de sessão) ficam em `Specs/`, e não em `docs/`, conforme a convenção do COP-01, seção 21.
 
 ## 21. Critérios de conformidade
 

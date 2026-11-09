@@ -2,7 +2,7 @@
 
 **Pilar:** 02 — Arquitetura\
 **Versão:** 1.1\
-**Status:** Proposta para aprovação\
+**Status:** Aprovado\
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia.
 
 ---

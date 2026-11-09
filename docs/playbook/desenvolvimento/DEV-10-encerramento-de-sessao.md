@@ -1,8 +1,8 @@
 # DEV-10 — Encerramento de Sessão e Transferência de Contexto
 
 **Pilar:** 03 — Desenvolvimento  
-**Versão:** 1.1 — revisão pontual proposta  
-**Status:** Revisão pontual em validação — versão anterior preservada  
+**Versão:** 1.1  
+**Status:** Aprovado  
 **Aplicação:** Todas as sessões de desenvolvimento assistido por IA.
 
 ---

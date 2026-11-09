@@ -1,8 +1,8 @@
 # PROD-02 — Requisitos, Jornadas e Regras de Negócio
 
 **Pilar:** 01 — Produto  
-**Versão:** 1.1 — revisão proposta  
-**Status:** Revisão normativa em validação — versão 1.0 preservada  
+**Versão:** 1.1  
+**Status:** Aprovado  
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia.
 
 ---

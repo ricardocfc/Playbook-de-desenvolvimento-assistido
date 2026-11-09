@@ -2,7 +2,7 @@
 
 **Pilar:** 03 — Desenvolvimento  
 **Versão:** 1.1  
-**Status:** Proposta revisada para aprovação  
+**Status:** Aprovado  
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia.
 
 ---

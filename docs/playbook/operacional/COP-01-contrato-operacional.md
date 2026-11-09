@@ -1,8 +1,8 @@
 # AI Development Playbook — Contrato Operacional das Skills
 
 **Identificador:** COP-01  
-**Versão:** 1.1 — consolidação das decisões de implementação aprovadas  
-**Status:** Proposta de consolidação v1.1 para conferência editorial; contrato v1.0 e decisões complementares aprovados  
+**Versão:** 1.1  
+**Status:** Aprovado  
 **Abrangência:** Execução operacional da metodologia por agentes e skills, independentemente de plataforma  
 **Referências principais:** PROD-02, PROD-04, DEV-04, DEV-05, DEV-06, DEV-09, DEV-10, DEV-11, DEV-12 e DEV-13.
 

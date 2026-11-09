@@ -1,8 +1,8 @@
 # PROD-01 — Descoberta e Visão do Produto
 
-**Pilar:** Produto\
+**Pilar:** 01 — Produto\
 **Versão:** 1.0\
-**Status:** Proposta para aprovação\
+**Status:** Aprovado\
 **Aplicação:** Todos os novos projetos de software.
 
 ## 1. Objetivo

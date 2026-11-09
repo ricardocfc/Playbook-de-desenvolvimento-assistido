@@ -1,8 +1,8 @@
 # DEV-11 — Histórico de Desenvolvimento e Rastreabilidade das Decisões
 
 **Pilar:** 03 — Desenvolvimento  
-**Versão:** 1.1 — revisão proposta  
-**Status:** Revisão normativa em validação — versão 1.0 preservada  
+**Versão:** 1.1  
+**Status:** Aprovado  
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia.
 
 ---
@@ -262,15 +262,14 @@ Esse registro deverá complementar o catálogo definido no DEV-07.
 
 O projeto deverá adotar uma organização simples e previsível.
 
-Uma estrutura possível seria:
+Uma estrutura possível seria, alinhada à convenção do COP-01, seção 21:
 
-`docs/historico/`
-
-`docs/decisoes/`
-
-`docs/incidentes/`
-
-`docs/riscos/`
+- `Specs/<SPEC>/history.md`: evolução funcional de cada funcionalidade (seção 25).
+- `Specs/<SPEC>/requests/`: registros operacionais das requisições.
+- `Specs/sessions/`: registros de transferência de sessão (DEV-10).
+- `docs/decisoes/`: decisões arquiteturais e técnicas (ARQ-04).
+- `docs/incidentes/`: incidentes relevantes.
+- `docs/riscos/`: riscos relevantes.
 
 Essa estrutura é ilustrativa.
 

@@ -2,7 +2,7 @@
 
 **Pilar:** 02 — Arquitetura\
 **Versão:** 1.0\
-**Status:** Proposta para aprovação\
+**Status:** Aprovado\
 **Aplicação:** Projetos de software desenvolvidos com a metodologia.
 
 ---

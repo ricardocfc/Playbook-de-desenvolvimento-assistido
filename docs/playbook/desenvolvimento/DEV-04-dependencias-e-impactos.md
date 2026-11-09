@@ -1,8 +1,8 @@
 # DEV-04 — Análise de Dependências e Impactos Indiretos
 
 **Pilar:** 03 — Desenvolvimento  
-**Versão:** 1.1 — revisão proposta  
-**Status:** Revisão normativa em validação — versão 1.0 preservada  
+**Versão:** 1.1  
+**Status:** Aprovado  
 **Aplicação:** Todos os projetos desenvolvidos com a metodologia.
 
 ---
