@@ -389,6 +389,7 @@ Uma estrutura possível para o projeto será:
 
 ```text
 projeto/
+├── README.md                # Visão do produto e contexto geral do projeto
 ├── CLAUDE.md                # Quando aplicável
 ├── AGENTS.md                # Quando aplicável
 ├── Specs/                   # SPECs, REQs, histórico funcional e handoffs (COP-01, seção 21)
@@ -407,7 +408,6 @@ projeto/
 │   │   ├── arquitetura/
 │   │   ├── desenvolvimento/
 │   │   └── operacional/
-│   ├── produto/             # Visão e documentação de produto do projeto
 │   ├── arquitetura/         # Documentação de arquitetura do projeto
 │   ├── decisoes/            # Decisões arquiteturais e técnicas (ARQ-04, DEV-11)
 │   ├── incidentes/          # Incidentes relevantes (DEV-11)
