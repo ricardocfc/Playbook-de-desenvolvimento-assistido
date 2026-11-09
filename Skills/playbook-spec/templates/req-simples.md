@@ -9,6 +9,7 @@
 | Origem | <solicitação do desenvolvedor, data> |
 | SPEC principal | <SPEC-NNN> — <justificativa pela finalidade> |
 | SPECs associadas | <nenhuma / SPEC-XXX (relação)> |
+| REQs relacionadas | <REQ-XXX (relação: depende de / estende / semelhante a) ou nenhuma> |
 | Risco (DEV-05) | <baixo / médio / alto> — <justificativa> |
 
 Estados possíveis (COP-01 §5): Interpretada, Contextualizada, Classificada, Impactos analisados, Especificada, Planejada, Em execução, Em validação, Concluída; ou Bloqueada, Suspensa, Parcialmente concluída, Concluída com ressalvas.

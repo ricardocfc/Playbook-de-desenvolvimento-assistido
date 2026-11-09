@@ -30,8 +30,9 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/operacional/COP-01-contrato-
    - Já atendida e validada → aponte a implementação; não crie duplicata.
    - Coberta por REQ aberta → reutilize a REQ (T-13).
    - Parcialmente coberta → proponha ampliação autorizada ou REQ nova; nunca amplie em silêncio (T-14).
-   - Finalidade própria → REQ nova, com referência às anteriores (T-15).
+   - Finalidade própria → REQ nova, com referência às anteriores no campo "REQs relacionadas" (T-15).
 4. **Classificar a SPEC principal pela finalidade atual**, não pela SPEC citada primeiro, pelo arquivo alterado ou pelo histórico (T-03). Identifique SPECs associadas e justifique. Se nenhuma SPEC servir, proponha criar `Specs/SPEC-NNN-nome/`.
+   - **Regra canônica em outra SPEC (T-04):** quando a necessidade nasce num domínio (ex.: Financeiro quer mudar o vencimento) e a regra afetada é canônica em outra SPEC (ex.: Clientes), a SPEC principal é a do domínio que motivou a mudança. A SPEC dona da regra entra como associada: a regra continua canônica lá, e seu `spec.md`/`history.md` só é atualizado após validação. Não escolha a SPEC principal apenas por ser a dona da regra. Se não estiver claro qual domínio motivou o pedido, pergunte.
 5. **Atribuir o ID.** Encontre o maior `REQ-NNN` existente em todo `Specs/` e use o seguinte. IDs são únicos no projeto e nunca renumerados.
 6. **Especificar (PROD-02, PROD-04):** jornada e etapas afetadas, requisitos, regras de negócio (referencie a regra canônica de outra SPEC em vez de copiá-la, T-11), estados, exceções e critérios de aceitação verificáveis no formato Dado/Quando/Então.
 7. **Classificar cada informação:** Confirmado, Sugerido, Pendente ou Descartado. Só requisito Confirmado segue para implementação.

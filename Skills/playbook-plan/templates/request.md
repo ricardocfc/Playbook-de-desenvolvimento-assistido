@@ -9,6 +9,7 @@
 | Origem | <solicitação, data> |
 | SPEC principal | <SPEC-NNN> — <justificativa> |
 | SPECs associadas | <SPEC-XXX (relação)> |
+| REQs relacionadas | <REQ-XXX (relação: depende de / estende / semelhante a) ou nenhuma> |
 | Risco (DEV-05) | <nível> — <justificativa> |
 | Perfil documental | intermediário / complexo — <motivo> |
 
