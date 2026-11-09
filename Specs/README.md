@@ -18,5 +18,5 @@ Specs/
 
 - IDs de REQ são sequenciais e únicos no projeto inteiro (`REQ-001`, `REQ-002`...), nunca renumerados.
 - Os registros de uma REQ ficam na sua SPEC principal. SPECs associadas recebem só referências.
-- Modelos: `Skills/playbook-spec/templates/`, `Skills/playbook-plan/templates/`, `Skills/playbook-handoff/templates/`.
+- Modelos: `.claude/skills/playbook-spec/templates/`, `.claude/skills/playbook-plan/templates/`, `.claude/skills/playbook-handoff/templates/`.
 - Não crie SPECs ou REQs de exemplo; elas nascem das solicitações reais.

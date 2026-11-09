@@ -22,7 +22,7 @@ Abra os demais documentos apenas para os temas do recorte auditado.
 ## Procedimento
 1. **Definir o recorte** com o desenvolvedor: projeto inteiro, uma SPEC, uma REQ ou um período.
 2. **Instalação:** versão no MANIFEST, documentos obrigatórios presentes, adaptadores apontando para a cópia local sem duplicar normas.
-3. **Estrutura (COP-01 §21):** `Specs/`, `Skills/`, `docs/playbook/`; registros operacionais fora de `docs/`.
+3. **Estrutura (COP-01 §21):** `Specs/`, `.claude/skills/`, `docs/playbook/`; registros operacionais fora de `docs/`.
 4. **REQs:** IDs únicos e sequenciais; uma SPEC principal por REQ com justificativa; SPECs associadas com referência e sem cópia de plano; estados coerentes com evidências.
 5. **Duplicidades (COP-01 §21.4):** REQs equivalentes ou sobrepostas; funcionalidades implementadas duas vezes.
 6. **Evidências:** impactos marcados como validados sem evidência; critérios Aprovados sem método; testes declarados que não aparecem.

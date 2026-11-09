@@ -6,7 +6,7 @@ Este projeto segue o **AI Development Playbook**, versão registrada em `docs/pl
 A cópia local em `docs/playbook/` é a referência normativa. Este arquivo só aponta para ela.
 
 ## Primeira sessão
-Se o projeto ainda não foi inicializado (não há handoff em `Specs/sessions/`), execute `Skills/playbook-init/SKILL.md` antes de qualquer outra tarefa.
+Se o projeto ainda não foi inicializado (não há handoff em `Specs/sessions/`), execute `.claude/skills/playbook-init/SKILL.md` antes de qualquer outra tarefa.
 
 ## Início de cada sessão
 1. Confira a versão em `docs/playbook/MANIFEST.md`.
@@ -19,13 +19,13 @@ Leia e siga o `SKILL.md` correspondente quando a tarefa se encaixar:
 
 | Situação | Skill |
 |---|---|
-| Inicializar ou diagnosticar o projeto | `Skills/playbook-init/SKILL.md` |
-| Novo pedido sem REQ registrada | `Skills/playbook-spec/SKILL.md` |
-| Analisar impacto, risco e planejar uma REQ | `Skills/playbook-plan/SKILL.md` |
-| Implementar uma REQ autorizada | `Skills/playbook-implement/SKILL.md` |
-| Validar uma REQ implementada | `Skills/playbook-review/SKILL.md` |
-| Encerrar, pausar ou retomar uma sessão | `Skills/playbook-handoff/SKILL.md` |
-| Auditar conformidade | `Skills/playbook-audit/SKILL.md` |
+| Inicializar ou diagnosticar o projeto | `.claude/skills/playbook-init/SKILL.md` |
+| Novo pedido sem REQ registrada | `.claude/skills/playbook-spec/SKILL.md` |
+| Analisar impacto, risco e planejar uma REQ | `.claude/skills/playbook-plan/SKILL.md` |
+| Implementar uma REQ autorizada | `.claude/skills/playbook-implement/SKILL.md` |
+| Validar uma REQ implementada | `.claude/skills/playbook-review/SKILL.md` |
+| Encerrar, pausar ou retomar uma sessão | `.claude/skills/playbook-handoff/SKILL.md` |
+| Auditar conformidade | `.claude/skills/playbook-audit/SKILL.md` |
 
 Terminar uma skill **não** dispara a próxima. Recomende o próximo passo e aguarde.
 

@@ -397,7 +397,7 @@ projeto/
 │   │   ├── history.md
 │   │   └── requests/
 │   └── sessions/
-├── Skills/                  # Skills operacionais playbook-* (COP-01, seção 21)
+├── .claude/skills/          # Skills operacionais playbook-* (COP-01, seção 21)
 ├── docs/
 │   ├── playbook/            # Cópia local da versão aprovada
 │   │   ├── README.md

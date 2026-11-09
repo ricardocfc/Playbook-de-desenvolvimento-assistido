@@ -220,10 +220,10 @@ As convenções desta seção foram aprovadas pelo responsável pela metodologia
 Os projetos terão três diretórios distintos na raiz, respeitando maiúsculas e minúsculas conforme a convenção aprovada:
 
 - `Specs/`: especificações funcionais, requisições, históricos funcionais e registros de transferência de sessões.
-- `Skills/`: sete skills operacionais, cada uma com seu `SKILL.md` e arquivos auxiliares somente quando necessários.
+- `.claude/skills/`: sete skills operacionais, cada uma com seu `SKILL.md` e arquivos auxiliares somente quando necessários. É a fonte única das skills: o Claude Code as descobre nessa pasta, e os demais assistentes chegam a elas pelos caminhos indicados no `AGENTS.md`.
 - `docs/`: pacote normativo da metodologia, em `docs/playbook/`, incluindo `docs/playbook/operacional/COP-01.md`.
 
-Adaptadores `AGENTS.md`, `CLAUDE.md` ou equivalentes ficam na raiz quando aplicáveis e apontam para a cópia normativa local. O diretório `docs/` não receberá os registros operacionais do produto. A localização canônica de `Skills/` não pressupõe que todos os agentes a descubram automaticamente; integrações específicas devem referenciar essa fonte sem manter cópias normativas divergentes.
+Adaptadores `AGENTS.md`, `CLAUDE.md` ou equivalentes ficam na raiz quando aplicáveis e apontam para a cópia normativa local. O diretório `docs/` não receberá os registros operacionais do produto. A localização canônica de `.claude/skills/` não pressupõe que todos os agentes a descubram automaticamente; integrações específicas devem referenciar essa fonte sem manter cópias divergentes.
 
 ### 21.2. Identificadores, propriedade e registros
 
@@ -283,7 +283,7 @@ projeto/
 │   │           ├── plan.md
 │   │           └── tasks.md
 │   └── sessions/
-├── Skills/
+├── .claude/skills/
 │   ├── playbook-init/SKILL.md
 │   ├── playbook-spec/SKILL.md
 │   ├── playbook-plan/SKILL.md
@@ -302,7 +302,7 @@ projeto/
 └── src/
 ```
 
-O exemplo não obriga criar SPECs ou REQs ilustrativas. O uso de `Specs/`, `Skills/` e `docs/` na raiz constitui a convenção aprovada para novos projetos; adaptações em projetos existentes devem respeitar o controle de mudanças.
+O exemplo não obriga criar SPECs ou REQs ilustrativas. O uso de `Specs/`, `.claude/skills/` e `docs/` na raiz constitui a convenção aprovada para novos projetos; adaptações em projetos existentes devem respeitar o controle de mudanças.
 
 ## 22. Controle de versão e incorporação
 

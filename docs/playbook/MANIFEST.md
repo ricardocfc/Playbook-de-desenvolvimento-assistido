@@ -1,6 +1,6 @@
 # MANIFEST — AI Development Playbook
 
-**Versão da distribuição:** 1.0.3  
+**Versão da distribuição:** 1.1.0  
 **Status da distribuição:** Aprovada. Todos os documentos listados estão aprovados.  
 **Fonte oficial:** repositório `ricardocfc/Playbook-de-desenvolvimento-assistido` no GitHub.  
 
@@ -39,7 +39,7 @@ Os caminhos são relativos a `docs/playbook/`.
 
 ## Convenções aprovadas complementares
 
-- A estrutura de pastas dos projetos segue o COP-01, seção 21: `Specs/` para SPECs, REQs, histórico funcional e handoffs; `Skills/` para as skills `playbook-*`; `docs/playbook/` para esta cópia normativa.
+- A estrutura de pastas dos projetos segue o COP-01, seção 21: `Specs/` para SPECs, REQs, histórico funcional e handoffs; `.claude/skills/` para as skills `playbook-*` (fonte única); `docs/playbook/` para esta cópia normativa.
 - Decisões arquiteturais, incidentes e riscos do projeto ficam em `docs/decisoes/`, `docs/incidentes/` e `docs/riscos/`.
 
 ## Regra de versões
