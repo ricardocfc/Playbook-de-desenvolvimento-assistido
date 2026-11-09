@@ -45,6 +45,8 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/operacional/COP-01-contrato-
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Especificação — <REQ-NNN> <título>
 - Finalidade: <objetivo e limites>
@@ -57,6 +59,8 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/operacional/COP-01-contrato-
 - Risco preliminar e trilha: <baixo → curta | médio/alto ou dúvida → completa> — <justificativa>
 - Próximo passo recomendado: playbook-implement (trilha curta) | playbook-plan (trilha completa)
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Anotei o que você pediu e como vamos saber que ficou pronto. Faltam duas decisões suas: ... Com elas, posso planejar como fazer." Em mudança simples: "É uma alteração pequena. Posso fazer agora?"
 
 ## Limites
 - Não implemente nem presuma aprovação de requisitos (COP-01 §12).

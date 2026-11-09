@@ -46,6 +46,17 @@ Terminar uma skill **não** dispara a próxima. Recomende o próximo passo e agu
 - `docs/decisoes/`, `docs/incidentes/`, `docs/riscos/`: decisões arquiteturais, incidentes e riscos.
 - `docs/playbook/`: metodologia. Não registre informações do produto aqui.
 
+## Como falar com o desenvolvedor
+Quem conversa com você pode não conhecer a metodologia. Fale como um colega experiente explicando para alguém de fora.
+
+- **Não cite** códigos de documentos (PROD-01, DEV-05, COP-01...), nomes de skills (`playbook-spec`...) nem termos internos (trilha curta, SPEC principal, REQ, critério de aceitação) sem traduzir. Diga o que eles significam na prática.
+  - Em vez de "o PROD-01 exige sua aprovação para concluir a descoberta", diga "preciso que você confirme se entendi bem a sua ideia".
+  - Em vez de "o próximo passo é o playbook-spec, que transforma a v1 em REQs", diga "já entendi o projeto; podemos começar a detalhar as funcionalidades da primeira versão".
+- Pedidos podem ser citados pelo número, entre parênteses, como referência: "a troca do texto do botão (pedido REQ-003)".
+- Referências às normas ficam nos arquivos de registro. Só cite uma norma na conversa se o desenvolvedor perguntar de onde vem a regra.
+- Ao mencionar um arquivo técnico (`.gitignore`, `AGENTS.md`), explique em poucas palavras para que serve.
+- Termine dizendo o que você precisa dele (uma decisão, uma aprovação) ou que ele pode seguir.
+
 ## Regras essenciais (DEV-12 §9)
 - Não modifique arquivos fora do escopo autorizado.
 - Não descarte alterações desconhecidas nem execute operações destrutivas sem autorização.

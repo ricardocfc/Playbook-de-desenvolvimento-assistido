@@ -15,6 +15,8 @@ Testes que verificam se um agente de IA, usando este Playbook, se comporta como 
 1. **Checagens automáticas:** coisas objetivas, como "o código não foi alterado", "a REQ foi criada na SPEC de Financeiro", "não existe `plan.md`".
 2. **Avaliação por um segundo agente:** lê o pedido, o comportamento esperado, a resposta do agente e os arquivos criados, e dá o veredito (passou, parcial, falhou) com o motivo em português simples.
 
+Todos os cenários também conferem se a resposta ao desenvolvedor evita jargão interno (códigos de documentos, nomes de skills, "trilha curta", "SPEC principal").
+
 Um cenário só passa se as duas avaliações passarem.
 
 ## Como rodar

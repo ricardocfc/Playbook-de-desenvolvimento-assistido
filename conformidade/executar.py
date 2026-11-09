@@ -91,8 +91,14 @@ def reqs_novas(est):
     return ids
 
 
-def checar(c, pasta, est):
+JARGAO = re.compile(r"\b(?:PROD|ARQ|DEV|COP)-\d{2}\b|\bplaybook-(?:init|spec|plan|implement|review|handoff|audit)\b|trilha (?:curta|completa)|SPEC principal")
+
+
+def checar(c, pasta, est, resposta=""):
     falhas = []
+    jargao = sorted(set(JARGAO.findall(resposta)))
+    if jargao:
+        falhas.append(f"resposta ao desenvolvedor usa jargão interno: {jargao}")
     codigo = [f for f in est["novos"] + est["alterados"] if f.startswith(("src/", "test/")) or f == "package.json"]
     novas = reqs_novas(est)
     if c.get("codigo_inalterado") and codigo:
@@ -180,7 +186,7 @@ def cenario(c, args, saida):
     pedido = prompt_inicial() if c["pedido"] == "@PROMPT_INICIAL" else c["pedido"]
     res = rodar_agente(pasta, pedido, args.modelo)
     est = estado(pasta)
-    falhas = checar(c.get("checagens", {}), pasta, est)
+    falhas = checar(c.get("checagens", {}), pasta, est, res.get("result", ""))
     juiz = julgar(args.modelo, pedido, c["esperado"], res.get("result", ""), est, pasta)
     final = "falhou" if falhas or juiz.get("veredito") == "falhou" else ("parcial" if juiz.get("veredito") != "passou" else "passou")
     r = {"id": c["id"], "titulo": c["titulo"], "resultado": final, "falhas_automaticas": falhas, "avaliacao": juiz,

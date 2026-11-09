@@ -33,6 +33,8 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 
 ## Saída (relatório de inicialização, DEV-12 §18.5)
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Inicialização — <projeto>
 - Versão do Playbook: <versão do MANIFEST> | Documentos: <n encontrados>/<n obrigatórios> | Ausentes: <lista ou "nenhum">
@@ -47,10 +49,14 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 - Próximo passo recomendado: <normalmente playbook-spec para a primeira solicitação>
 ```
 
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Já li as regras de trabalho e conferi o projeto. Agora quero entender a sua ideia: me conte ..."
+
 ## Limites
 - Concluir esta skill **não inicia** `playbook-spec` (COP-01 §13, teste T-01). Aguarde nova solicitação do desenvolvedor.
 - Não substitua a cópia local por conteúdo remoto nem atualize a versão do Playbook por iniciativa própria (DEV-12 §18.1).
 - O relatório demonstra a verificação inicial; não garante cumprimento futuro.
+
+Grave o relatório como primeiro registro de sessão em `Specs/sessions/AAAA-MM-DD-inicializacao.md`, se houver autorização para criar registros.
 
 ## Sessões posteriores
 Não releia tudo. Use o adaptador, o MANIFEST e o último handoff em `Specs/sessions/` para recuperar contexto (DEV-09, DEV-12 §18.6).

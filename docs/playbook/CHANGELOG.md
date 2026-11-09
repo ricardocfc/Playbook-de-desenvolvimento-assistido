@@ -29,3 +29,13 @@ Ajustes do primeiro piloto (Windows, download em ZIP).
 - `playbook-audit` confere se `.claude/skills/` está idêntica a `Skills/`.
 - COP-01 §21: caminho real do arquivo (`COP-01-contrato-operacional.md`); §22: estado atualizado para aprovado e incorporado.
 - DEV-06 §14: `PR-RISCO-001` deixa claro que é exemplo de precedente registrado no projeto.
+
+## 1.0.3 — 2026-11-09
+
+Comunicação em linguagem comum com o desenvolvedor.
+
+- `AGENTS.md`: nova seção "Como falar com o desenvolvedor". O agente não cita códigos de normas, nomes de skills nem termos internos na conversa; essas referências ficam nos arquivos de registro.
+- Todas as skills: a seção Saída separa o **registro** (vai para os arquivos, com referências às normas) da **resposta ao desenvolvedor** (palavras comuns, com exemplo).
+- `playbook-init`: o relatório de inicialização é gravado em `Specs/sessions/` quando autorizado.
+- Bateria de conformidade: checagem automática que reprova respostas com códigos de normas ou nomes de skills.
+- Correções pendentes da 1.0.2: versão no MANIFEST, `CHANGELOG.md` da raiz removido e menções a links simbólicos trocadas por "cópia de `Skills/`".
