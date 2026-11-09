@@ -39,3 +39,11 @@ Comunicação em linguagem comum com o desenvolvedor.
 - `playbook-init`: o relatório de inicialização é gravado em `Specs/sessions/` quando autorizado.
 - Bateria de conformidade: checagem automática que reprova respostas com códigos de normas ou nomes de skills.
 - Correções pendentes da 1.0.2: versão no MANIFEST, `CHANGELOG.md` da raiz removido e menções a links simbólicos trocadas por "cópia de `Skills/`".
+
+## 1.1.0 — 2026-11-09
+
+Skills em uma pasta só.
+
+- As skills passam a ficar apenas em `.claude/skills/`, que vira a fonte única. A pasta `Skills/` deixa de existir, junto com a cópia que precisava ser mantida igual.
+- COP-01 §21, DEV-12 §20, MANIFEST, `AGENTS.md`, `CLAUDE.md`, README e skills atualizados para o novo caminho.
+- Projetos na 1.0.x: ao atualizar, apague `Skills/` depois de conferir que `.claude/skills/` está igual a ela, e troque os caminhos no `AGENTS.md`.

@@ -10,8 +10,7 @@ Versão atual: veja [`docs/playbook/MANIFEST.md`](docs/playbook/MANIFEST.md).
 .
 ├── AGENTS.md              # instruções para qualquer assistente (Codex, Cursor, Copilot, Claude...)
 ├── CLAUDE.md              # adaptador do Claude Code (importa AGENTS.md)
-├── .claude/skills/        # cópia de Skills/, para o Claude Code descobrir as skills
-├── Skills/                # as 7 skills operacionais (fonte única)
+├── .claude/skills/        # as 7 skills operacionais (fonte única; o Claude Code as encontra aqui)
 │   ├── playbook-init/     # inicialização e diagnóstico
 │   ├── playbook-spec/     # interpretação, REQs e especificação
 │   ├── playbook-plan/     # impactos, risco e plano
@@ -77,23 +76,23 @@ Há duas trilhas, conforme o risco (DEV-05):
 
 ## Adotar em um projeto existente
 
-Copie `docs/playbook/` e `Skills/` para o projeto. Não sobrescreva `AGENTS.md` ou `CLAUDE.md` existentes: peça ao agente para rodar o `playbook-init`, que propõe incluir apenas o bloco do Playbook (modelos em `Skills/playbook-init/templates/`). A migração da organização existente segue o controle de mudanças; nada é reorganizado automaticamente.
+Copie `docs/playbook/` e `.claude/skills/` para o projeto. Não sobrescreva `AGENTS.md` ou `CLAUDE.md` existentes: peça ao agente para rodar o `playbook-init`, que propõe incluir apenas o bloco do Playbook (modelos em `.claude/skills/playbook-init/templates/`). A migração da organização existente segue o controle de mudanças; nada é reorganizado automaticamente.
 
 ## Compatibilidade com assistentes
 
 | Assistente | Como encontra as instruções e skills |
 |---|---|
-| Claude Code | `CLAUDE.md` importa `AGENTS.md`; skills descobertas em `.claude/skills/` (cópia de `Skills/`) |
+| Claude Code | `CLAUDE.md` importa `AGENTS.md`; skills descobertas em `.claude/skills/` |
 | Assistentes que leem `AGENTS.md` | `AGENTS.md` lista cada skill e o caminho do `SKILL.md` a seguir |
 | Outros | Aponte o arquivo de instruções do assistente para `AGENTS.md` |
 
 Os arquivos `SKILL.md` usam o formato aberto de Agent Skills (cabeçalho com `name` e `description`). Mesmo um assistente sem suporte nativo a skills consegue segui-las lendo o arquivo indicado no `AGENTS.md`.
 
-**`.claude/skills/`** é uma cópia de `Skills/` (funciona no Windows e em downloads ZIP). A fonte continua sendo `Skills/`: ao alterar uma skill, copie a pasta de novo para `.claude/skills/`.
+**`.claude/skills/`** é a única pasta de skills. Começa com ponto: no Mac e no Linux ela fica oculta no gerenciador de arquivos, mas aparece no editor e no Git. Ao baixar o ZIP ou copiar o Playbook, confira que ela veio junto.
 
 ## Atualizar a metodologia em um projeto
 
-Cada projeto usa a cópia local da versão que adotou. Uma versão nova publicada aqui **não** altera projetos automaticamente (DEV-12 §14 a §16). Para atualizar, compare o `MANIFEST.md` do projeto com o desta distribuição, substitua `docs/playbook/` e `Skills/` em uma branch e registre a adoção como decisão em `docs/decisoes/`.
+Cada projeto usa a cópia local da versão que adotou. Uma versão nova publicada aqui **não** altera projetos automaticamente (DEV-12 §14 a §16). Para atualizar, compare o `MANIFEST.md` do projeto com o desta distribuição, substitua `docs/playbook/` e `.claude/skills/` em uma branch e registre a adoção como decisão em `docs/decisoes/`.
 
 ## Manutenção desta distribuição
 
