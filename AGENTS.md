@@ -10,7 +10,7 @@ Se o projeto ainda não foi inicializado (não há handoff em `Specs/sessions/`)
 
 ## Início de cada sessão
 1. Confira a versão em `docs/playbook/MANIFEST.md`.
-2. Leia o handoff mais recente em `Specs/sessions/` e as REQs citadas.
+2. Leia o `README.md` (visão do produto), o handoff mais recente em `Specs/sessions/` e as REQs citadas.
 3. Verifique o estado atual do repositório antes de confiar nos registros.
 4. Consulte os documentos do Playbook pertinentes à tarefa (não é preciso reler tudo).
 
@@ -40,6 +40,7 @@ Terminar uma skill **não** dispara a próxima. Recomende o próximo passo e agu
 - Não releia `docs/playbook/` inteiro a cada sessão; a leitura integral acontece uma vez, no `playbook-init`.
 
 ## Onde as coisas ficam
+- `README.md` (raiz): visão do produto e contexto geral. Mudanças na visão exigem aprovação do desenvolvedor.
 - `Specs/SPEC-NNN-nome/spec.md`: comportamento vigente. `history.md`: evolução funcional (aditivo).
 - `Specs/SPEC-NNN-nome/requests/`: registros das REQs (`REQ-NNN.md` ou `REQ-NNN/`).
 - `Specs/sessions/`: handoffs de sessão.

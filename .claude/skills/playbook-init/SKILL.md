@@ -29,6 +29,7 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 5. **Preparar adaptadores.** Proponha (ou, se autorizado, crie) o adaptador do assistente em uso a partir dos modelos em `.claude/skills/playbook-init/templates/` (`AGENTS.md`, `CLAUDE.md`). Se o projeto já tiver um desses arquivos, proponha a inclusão apenas do bloco do Playbook. O adaptador aponta para `docs/playbook/` e registra a versão; não copia as normas (DEV-12 §6, §9).
 6. **Verificar a estrutura do projeto.** Confira `Specs/`, `.claude/skills/`, `docs/playbook/`, `docs/decisoes/`, `docs/incidentes/`, `docs/riscos/` (COP-01 §21). Em projeto existente, não reorganize: proponha.
 7. **Diagnóstico inicial (DEV-08), sem modificar código.** Cubra produto, arquitetura, desenvolvimento (Git, testes, build), segurança e documentação. Para projeto novo sem código, conduza a entrevista de descoberta do PROD-01.
+   - **Visão do produto no `README.md` da raiz.** Consolide a visão (PROD-01 §6) no `README.md` usando `templates/README.md`, com o estado "Rascunho" até o desenvolvedor aprovar. Se o `README.md` for o da distribuição do Playbook (título "AI Development Playbook"), substitua-o. Se for um README próprio do projeto, proponha a inclusão das seções que faltam sem apagar o que existe. Não crie `docs/produto/` para a visão: o `README.md` é o lugar único do contexto do produto.
 8. **Classificar achados (DEV-08 §13):** bloqueadores, riscos relevantes, melhorias recomendadas, oportunidades futuras.
 
 ## Saída (relatório de inicialização, DEV-12 §18.5)
@@ -41,7 +42,7 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 - Assistente e ambiente: <assistente>; recursos indisponíveis: <lista>
 - Regras fundamentais que vou seguir: <5 a 8 linhas>
 - Classificação de risco: baixo / médio / alto conforme DEV-05
-- Onde ficam requisitos, decisões e handoffs: Specs/, docs/decisoes/, Specs/sessions/
+- Onde ficam visão do produto, requisitos, decisões e handoffs: README.md, Specs/, docs/decisoes/, Specs/sessions/
 - Adaptadores: <existentes | propostos | criados com autorização>
 - Diagnóstico: bloqueadores / riscos / melhorias / oportunidades
 - Limitações desta análise: <lista>

@@ -55,7 +55,7 @@ Há duas trilhas, conforme o risco (DEV-05):
 ## Começar um projeto novo
 
 1. Crie o repositório do projeto a partir deste (botão **Use this template** no GitHub, ou copie todos os arquivos, inclusive as pastas ocultas `.claude/` e o `.gitattributes`).
-2. Abra o projeto no seu assistente.
+2. Abra o projeto no seu assistente. O `README.md` que veio com o Playbook (este arquivo) será substituído pela visão do seu produto durante a inicialização; a explicação do Playbook continua disponível no repositório oficial.
 3. Envie o prompt inicial oficial (DEV-12 §18.2):
 
 > Este projeto utiliza a metodologia AI Development Playbook, disponível na pasta `docs/playbook/`.

@@ -47,3 +47,14 @@ Skills em uma pasta só.
 - As skills passam a ficar apenas em `.claude/skills/`, que vira a fonte única. A pasta `Skills/` deixa de existir, junto com a cópia que precisava ser mantida igual.
 - COP-01 §21, DEV-12 §20, MANIFEST, `AGENTS.md`, `CLAUDE.md`, README e skills atualizados para o novo caminho.
 - Projetos na 1.0.x: ao atualizar, apague `Skills/` depois de conferir que `.claude/skills/` está igual a ela, e troque os caminhos no `AGENTS.md`.
+
+## 1.2.0 — 2026-11-09
+
+Visão do produto no `README.md` da raiz.
+
+- A visão consolidada do produto passa a ficar no `README.md` da raiz do projeto, que vira o lugar único do contexto do produto. A pasta `docs/produto/` deixa de ser sugerida.
+- Novo modelo `.claude/skills/playbook-init/templates/README.md`, com as seções da consolidação da visão (PROD-01 §6), a tecnologia e onde está o restante.
+- `playbook-init`: grava a visão no `README.md` (substitui o README da distribuição; em README próprio, propõe as seções que faltam).
+- `AGENTS.md`: o `README.md` entra na leitura do início de sessão e na lista de onde fica cada coisa.
+- DEV-12 §20: a estrutura ilustrativa mostra o `README.md` na raiz e não mais `docs/produto/`.
+- Projetos já iniciados: mova o conteúdo de `docs/produto/` para o `README.md` e apague a pasta.
