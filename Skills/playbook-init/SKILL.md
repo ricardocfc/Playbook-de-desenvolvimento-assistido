@@ -8,6 +8,8 @@ description: Inicializa o AI Development Playbook em um projeto. Use na primeira
 Esta skill executa o COP-01 §13. As normas são a autoridade; este arquivo é um roteiro operacional. Em caso de divergência, prevalece o documento normativo, e a divergência deve ser comunicada.
 
 ## Fontes normativas
+Esta é a única skill que lê as normas por inteiro, e só na primeira inicialização (DEV-12 §18.3). Nas sessões seguintes, as demais skills consultam apenas as seções necessárias.
+
 - `docs/playbook/desenvolvimento/DEV-12-instrucoes-permanentes.md` (§18: inicialização; §5, §6, §9: adaptadores)
 - `docs/playbook/desenvolvimento/DEV-08-diagnostico-inicial.md`
 - `docs/playbook/operacional/COP-01-contrato-operacional.md`

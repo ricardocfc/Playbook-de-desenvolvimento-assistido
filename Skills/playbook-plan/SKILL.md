@@ -7,12 +7,20 @@ description: Analisa impactos, dependências e risco de uma REQ já especificada
 
 Executa o COP-01 §8, §9, §14 e §21.3. As normas são a autoridade; este arquivo é um roteiro.
 
-## Fontes normativas
-- `docs/playbook/desenvolvimento/DEV-04-dependencias-e-impactos.md` (§13 classificação, §14 profundidade, §15 comunicação, §20 entre SPECs)
-- `docs/playbook/desenvolvimento/DEV-05-gestao-de-riscos.md` (§5 a §9 níveis e matriz, §12 precedentes, §17 plano proporcional)
-- `docs/playbook/desenvolvimento/DEV-06-controle-de-escopo.md` (§7 contrato de implementação, §8 proporcionalidade)
-- `docs/playbook/arquitetura/` (ARQ-01 a ARQ-04) quando a mudança tocar estrutura, componentes compartilhados ou decisões
-- `docs/playbook/desenvolvimento/DEV-02-branches-e-experimentacao.md` para a estratégia de isolamento
+## Quando consultar as normas
+Esta skill só roda na trilha completa (risco médio ou alto), então consulte de forma dirigida:
+- Classificação de risco com dúvida entre níveis → DEV-05 §4, §8 e §9.
+- Precedente de risco aplicável → DEV-05 §12.
+- Análise de impactos → DEV-04 §4 a §12; profundidade pelo §14; impactos entre SPECs pelo §20.
+- Contrato de implementação → DEV-06 §7 e §8.
+- Mudança em estrutura, componente compartilhado ou decisão arquitetural → ARQ-01 a ARQ-04, na seção do tema.
+- Estratégia de branch → DEV-02 §6 a §9.
+- Risco alto → leia DEV-05 §7 inteiro antes de propor o plano.
+
+Caminhos: `docs/playbook/desenvolvimento/` e `docs/playbook/arquitetura/`.
+
+## Quando esta skill é dispensada
+Na **trilha curta** (baixo risco evidente, definido pelo `playbook-spec`), não rode esta skill: a REQ simples já contém escopo, tarefas e critérios. Se durante a implementação o risco subir, a REQ volta para cá (DEV-05 §15).
 
 ## Pré-requisitos (verifique, não presuma)
 - A REQ existe em `Specs/<SPEC>/requests/` e seus requisitos estão Confirmados ou as pendências estão explícitas.

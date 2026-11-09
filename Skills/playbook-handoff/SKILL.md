@@ -7,15 +7,21 @@ description: Encerra uma sessão ou etapa registrando o estado real do trabalho,
 
 Executa o COP-01 §16 e §21.5. As normas são a autoridade; este arquivo é um roteiro.
 
-## Fontes normativas
-- `docs/playbook/desenvolvimento/DEV-10-encerramento-de-sessao.md` (§5 estados, §14 registro, §17 proporcionalidade, §23 SPECs)
-- `docs/playbook/desenvolvimento/DEV-09-preparacao-de-sessoes.md` (retomada: §5, §8, §18, §24)
-- `docs/playbook/desenvolvimento/DEV-11-historico-e-rastreabilidade.md` (§25)
-- `docs/playbook/desenvolvimento/DEV-01-versionamento-git.md` (§16)
+## Quando consultar as normas
+Para baixo risco, este roteiro basta. Abra a norma só quando:
+- Encerrar trabalho de risco médio ou alto, ou com problemas não resolvidos → DEV-10 §17 e §18.
+- Houver REQs entre SPECs → DEV-10 §23 e DEV-11 §25.
+- Retomar trabalho de outro agente ou com registros divergentes do código → DEV-09 §8, §18 e §24.
+
+Caminhos: `docs/playbook/desenvolvimento/`.
 
 ## Autorização
 - Ler e registrar o handoff em `Specs/sessions/`: conforme autorização do projeto para arquivos de registro.
 - Commit, push ou qualquer nova operação: **não** decorrem do encerramento (COP-01 §12).
+
+## Proporcionalidade
+- **Trilha curta, concluída na mesma sessão:** basta preencher a seção Encerramento do `REQ-NNN.md`. Crie arquivo em `Specs/sessions/` só se a sessão terminar com algo pendente.
+- **Trilha completa, trabalho pausado ou troca de agente:** siga o procedimento inteiro.
 
 ## Encerramento: procedimento
 1. **Estado real de cada REQ tocada (DEV-10 §5):** concluído, concluído com ressalvas, parcialmente concluído, bloqueado ou não iniciado. O estado precisa bater com as evidências.

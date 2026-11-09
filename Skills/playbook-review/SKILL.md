@@ -7,15 +7,22 @@ description: Confronta a implementação de uma REQ com os critérios de aceita�
 
 Executa o COP-01 §8 e §15. As normas são a autoridade; este arquivo é um roteiro.
 
-## Fontes normativas
-- `docs/playbook/produto/PROD-04-criterios-de-aceitacao.md` (§7 a §16)
-- `docs/playbook/desenvolvimento/DEV-04-dependencias-e-impactos.md` (§13, §20)
-- `docs/playbook/desenvolvimento/DEV-05-gestao-de-riscos.md` (§18 validação proporcional)
-- `docs/playbook/desenvolvimento/DEV-06-controle-de-escopo.md` (§17 verificação das alterações)
+## Quando consultar as normas
+Para baixo risco, este roteiro basta. Abra a norma só quando:
+- Validar jornada completa, permissões, estados ou exceções → PROD-04 §7 a §10.
+- Definir que evidência é suficiente → PROD-04 §13 e DEV-05 §18.
+- Concluir uma funcionalidade inteira → PROD-04 §16.
+- Houver impactos em outras SPECs → DEV-04 §20 e DEV-11 §25.
+
+Caminhos: `docs/playbook/produto/` e `docs/playbook/desenvolvimento/`.
 
 ## Pré-requisitos (verifique, não presuma)
 - Leia o diff real e o estado do repositório. O relato do `playbook-implement` não é evidência (COP-01 §11).
 - Localize os critérios de aceitação da REQ e os impactos registrados.
+
+## Proporcionalidade
+- **Trilha curta:** verifique o que a alteração pode afetar (inspeção, build, testes existentes da área) e registre o resultado na seção Validação do próprio `REQ-NNN.md`, em poucas linhas. Os passos 3 e 4 abaixo só se aplicam se houver jornada ou impacto cruzado.
+- **Trilha completa:** siga todos os passos.
 
 ## Procedimento
 1. **Escopo:** compare o diff com o escopo autorizado. Alteração fora dele é achado, mesmo que pareça boa.

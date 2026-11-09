@@ -9,3 +9,5 @@ Primeira distribuição.
 - Decisões, incidentes e riscos do projeto passam a ficar em `docs/decisoes/`, `docs/incidentes/` e `docs/riscos/`.
 - Sete skills operacionais em `Skills/`, com modelos de SPEC, histórico, REQ, plano, tarefas, ADR e handoff.
 - Adaptadores `AGENTS.md` e `CLAUDE.md`, e integração do Claude Code via `.claude/skills/`.
+- Trilha curta para baixo risco (spec → implement em um único `REQ-NNN.md`) e trilha completa para médio e alto risco.
+- Skills indicam a seção exata da norma a consultar e quando, em vez de listar documentos inteiros.

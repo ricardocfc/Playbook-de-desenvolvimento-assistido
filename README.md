@@ -43,7 +43,15 @@ playbook-init → playbook-spec → playbook-plan → playbook-implement → pla
 
 Cada etapa exige autorização própria. Terminar uma skill **não** inicia a próxima: o agente recomenda o próximo passo e espera.
 
-A documentação de cada requisição é proporcional ao risco: uma REQ simples é um único arquivo; `plan.md` e `tasks.md` só aparecem quando se justificam.
+Há duas trilhas, conforme o risco (DEV-05):
+
+- **Trilha curta** (baixo risco evidente): `playbook-spec` → `playbook-implement`, com tudo registrado em um único `REQ-NNN.md`. É o caminho da maioria das tarefas do dia a dia.
+- **Trilha completa** (risco médio ou alto, ou dúvida): as cinco etapas, com `plan.md` e `tasks.md` quando se justificam.
+
+## Consumo de tokens
+
+- A leitura integral das normas (cerca de 39 mil palavras) acontece **uma vez**, no `playbook-init`.
+- No dia a dia, o agente carrega o `AGENTS.md` e a skill da etapa (cerca de 500 palavras cada). As skills indicam a seção exata da norma a abrir, e só quando a situação pede.
 
 ## Começar um projeto novo
 

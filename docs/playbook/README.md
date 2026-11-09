@@ -56,4 +56,4 @@ playbook-init ──► playbook-spec ──► playbook-plan ──► playbook
                                   playbook-audit (a qualquer momento)
 ```
 
-Cada transição exige autorização própria. Concluir uma etapa não inicia a seguinte (COP-01, seções 9 e 21.6).
+Em baixo risco evidente, a trilha curta vai de `playbook-spec` direto para `playbook-implement`. Cada transição exige autorização própria. Concluir uma etapa não inicia a seguinte (COP-01, seções 9 e 21.6).

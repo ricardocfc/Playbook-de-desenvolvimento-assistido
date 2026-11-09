@@ -7,11 +7,12 @@ description: Avalia a conformidade documental e operacional do projeto com a ver
 
 Executa o COP-01 §16 e §17. As normas são a autoridade; este arquivo é um roteiro.
 
-## Fontes normativas
-- `docs/playbook/MANIFEST.md` e todos os documentos que ele lista
-- `docs/playbook/operacional/COP-01-contrato-operacional.md` (§3 invariantes, §19 cenários de teste, §21 convenções)
-- `docs/playbook/desenvolvimento/DEV-12-instrucoes-permanentes.md` (§19 e §21)
-- `docs/playbook/desenvolvimento/DEV-11-historico-e-rastreabilidade.md`
+## Quando consultar as normas
+A auditoria é a exceção: para cada achado, confirme a regra na norma antes de registrá-lo. Comece por:
+- `docs/playbook/MANIFEST.md` (versão e documentos obrigatórios).
+- COP-01 §3 (invariantes), §19 (cenários de teste) e §21 (convenções).
+- DEV-12 §19 e §21 (conformidade), DEV-11 (histórico).
+Abra os demais documentos apenas para os temas do recorte auditado.
 
 ## Autorização
 - Ler e inspecionar: permitido.

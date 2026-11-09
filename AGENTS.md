@@ -29,6 +29,16 @@ Leia e siga o `SKILL.md` correspondente quando a tarefa se encaixar:
 
 Terminar uma skill **não** dispara a próxima. Recomende o próximo passo e aguarde.
 
+## Trilhas (proporcionais ao risco, DEV-05)
+- **Curta (baixo risco evidente):** `playbook-spec` registra um `REQ-NNN.md` simples → `playbook-implement` → verificação resumida no próprio arquivo. Sem `playbook-plan`, sem arquivo de sessão se nada ficar pendente. Exemplos: texto, estilo, ajuste localizado em componente não compartilhado.
+- **Completa (risco médio ou alto, ou dúvida):** spec → plan → implement → review → handoff.
+- Se o risco subir no meio do caminho, pare e passe para a trilha completa.
+- Nas duas trilhas valem: REQ registrada, escopo respeitado, nenhum teste declarado sem ter rodado, e commit/push/merge/deploy só com autorização.
+
+## Leitura econômica
+- O checklist de cada skill é suficiente para baixo risco. Abra uma norma só na seção que a skill indica, quando a situação pedir.
+- Não releia `docs/playbook/` inteiro a cada sessão; a leitura integral acontece uma vez, no `playbook-init`.
+
 ## Onde as coisas ficam
 - `Specs/SPEC-NNN-nome/spec.md`: comportamento vigente. `history.md`: evolução funcional (aditivo).
 - `Specs/SPEC-NNN-nome/requests/`: registros das REQs (`REQ-NNN.md` ou `REQ-NNN/`).

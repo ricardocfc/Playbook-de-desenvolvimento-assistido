@@ -1,22 +1,26 @@
 ---
 name: playbook-implement
-description: Executa as alterações autorizadas de uma REQ planejada, preservando escopo, trabalho existente e estado do repositório, e registra o que de fato mudou. Use quando o desenvolvedor autorizar a implementação de uma REQ. Não declara validação nem publica.
+description: Executa as alterações autorizadas de uma REQ planejada, preservando escopo, trabalho existente e estado do repositório, e registra o que de fato mudou. Na trilha curta (baixo risco) roda direto após playbook-spec. Use quando o desenvolvedor autorizar a implementação de uma REQ. Não declara validação nem publica.
 ---
 
 # playbook-implement — Implementação sob controle de escopo
 
 Executa o COP-01 §9 e §15. As normas são a autoridade; este arquivo é um roteiro.
 
-## Fontes normativas
-- `docs/playbook/desenvolvimento/DEV-06-controle-de-escopo.md` (§9 a §14, §17, §18)
-- `docs/playbook/desenvolvimento/DEV-01-versionamento-git.md` (§5 preservação, §6 a §8 commits, §10 operações de risco)
-- `docs/playbook/desenvolvimento/DEV-02-branches-e-experimentacao.md`
-- `docs/playbook/desenvolvimento/DEV-05-gestao-de-riscos.md` (§15 reavaliação, §19 implementação x publicação)
-- `docs/playbook/arquitetura/` conforme a área tocada
-- `docs/playbook/desenvolvimento/DEV-13-orquestracao-de-recursos.md` se delegar a subagentes
+## Quando consultar as normas
+Para baixo risco, este roteiro basta. Abra a norma só quando:
+- Surgir alteração fora do escopo, melhoria ou problema crítico → DEV-06 §9 a §11.
+- Tocar componente compartilhado → DEV-06 §14 e ARQ-02.
+- Commit, branch, merge ou operação de risco no Git → DEV-01 §6 a §10 e DEV-02.
+- Descobrir risco maior que o previsto → DEV-05 §15.
+- Delegar a subagentes ou ferramentas → DEV-13 §6 a §12.
+
+Caminhos: `docs/playbook/desenvolvimento/` e `docs/playbook/arquitetura/`.
 
 ## Pré-requisitos (verifique, não presuma)
 1. Existe autorização para implementar **esta** REQ, com escopo definido. Aprovação de especificação ou de plano sozinha não basta (T-12, T-18).
+   - **Trilha curta:** a própria solicitação do desenvolvedor pode bastar como autorização para a alteração (DEV-05 §5), mas não para commit, push, merge ou deploy. Não há `plan.md`; siga as tarefas do `REQ-NNN.md`.
+   - **Trilha completa:** exige plano aprovado ou autorização específica.
 2. O estado real do repositório: branch atual, alterações não commitadas, divergências com o plano. Não descarte alterações desconhecidas (DEV-01 §5).
 3. A capacidade pedida ainda não existe no código (COP-01 §15). Se existir, pare e informe.
 
