@@ -27,12 +27,13 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 3. **Identificar o ambiente.** Qual assistente está em uso, quais recursos existem (terminal, Git, testes, acesso à rede, skills, subagentes) e quais não existem. Não presuma recursos de outra plataforma (COP-01 §18).
 4. **Examinar instruções existentes.** Procure `AGENTS.md`, `CLAUDE.md` e equivalentes. Preserve conteúdo válido; não sobrescreva.
 5. **Preparar adaptadores.** Proponha (ou, se autorizado, crie) o adaptador do assistente em uso a partir dos modelos em `Skills/playbook-init/templates/` (`AGENTS.md`, `CLAUDE.md`). Se o projeto já tiver um desses arquivos, proponha a inclusão apenas do bloco do Playbook. O adaptador aponta para `docs/playbook/` e registra a versão; não copia as normas (DEV-12 §6, §9).
-6. **Arquivos da distribuição.** Se o projeto trouxer arquivos que são só da distribuição do Playbook (o `README.md` do Playbook, a pasta `conformidade/`), proponha removê-los ou substituí-los. Confira também se `.claude/skills/` existe e tem as mesmas skills de `Skills/`; se faltar ou estiver diferente, proponha copiar `Skills/` para lá.
-7. **Verificar a estrutura do projeto.** Confira `Specs/`, `Skills/`, `docs/playbook/`, `docs/decisoes/`, `docs/incidentes/`, `docs/riscos/` (COP-01 §21). Em projeto existente, não reorganize: proponha.
-8. **Diagnóstico inicial (DEV-08), sem modificar código.** Cubra produto, arquitetura, desenvolvimento (Git, testes, build), segurança e documentação. Para projeto novo sem código, conduza a entrevista de descoberta do PROD-01.
-9. **Classificar achados (DEV-08 §13):** bloqueadores, riscos relevantes, melhorias recomendadas, oportunidades futuras.
+6. **Verificar a estrutura do projeto.** Confira `Specs/`, `Skills/`, `docs/playbook/`, `docs/decisoes/`, `docs/incidentes/`, `docs/riscos/` (COP-01 §21). Em projeto existente, não reorganize: proponha.
+7. **Diagnóstico inicial (DEV-08), sem modificar código.** Cubra produto, arquitetura, desenvolvimento (Git, testes, build), segurança e documentação. Para projeto novo sem código, conduza a entrevista de descoberta do PROD-01.
+8. **Classificar achados (DEV-08 §13):** bloqueadores, riscos relevantes, melhorias recomendadas, oportunidades futuras.
 
 ## Saída (relatório de inicialização, DEV-12 §18.5)
+
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
 
 ```markdown
 ## Inicialização — <projeto>
@@ -48,10 +49,14 @@ Esta é a única skill que lê as normas por inteiro, e só na primeira iniciali
 - Próximo passo recomendado: <normalmente playbook-spec para a primeira solicitação>
 ```
 
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Já li as regras de trabalho e conferi o projeto. Agora quero entender a sua ideia: me conte ..."
+
 ## Limites
 - Concluir esta skill **não inicia** `playbook-spec` (COP-01 §13, teste T-01). Aguarde nova solicitação do desenvolvedor.
 - Não substitua a cópia local por conteúdo remoto nem atualize a versão do Playbook por iniciativa própria (DEV-12 §18.1).
 - O relatório demonstra a verificação inicial; não garante cumprimento futuro.
+
+Grave o relatório como primeiro registro de sessão em `Specs/sessions/AAAA-MM-DD-inicializacao.md`, se houver autorização para criar registros.
 
 ## Sessões posteriores
 Não releia tudo. Use o adaptador, o MANIFEST e o último handoff em `Specs/sessions/` para recuperar contexto (DEV-09, DEV-12 §18.6).

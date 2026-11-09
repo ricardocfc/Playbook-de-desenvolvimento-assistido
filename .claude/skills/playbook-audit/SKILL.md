@@ -22,7 +22,7 @@ Abra os demais documentos apenas para os temas do recorte auditado.
 ## Procedimento
 1. **Definir o recorte** com o desenvolvedor: projeto inteiro, uma SPEC, uma REQ ou um período.
 2. **Instalação:** versão no MANIFEST, documentos obrigatórios presentes, adaptadores apontando para a cópia local sem duplicar normas.
-3. **Estrutura (COP-01 §21):** `Specs/`, `Skills/`, `docs/playbook/`; registros operacionais fora de `docs/`; `.claude/skills/` idêntica a `Skills/` (cópia para o Claude Code).
+3. **Estrutura (COP-01 §21):** `Specs/`, `Skills/`, `docs/playbook/`; registros operacionais fora de `docs/`.
 4. **REQs:** IDs únicos e sequenciais; uma SPEC principal por REQ com justificativa; SPECs associadas com referência e sem cópia de plano; estados coerentes com evidências.
 5. **Duplicidades (COP-01 §21.4):** REQs equivalentes ou sobrepostas; funcionalidades implementadas duas vezes.
 6. **Evidências:** impactos marcados como validados sem evidência; critérios Aprovados sem método; testes declarados que não aparecem.
@@ -34,6 +34,8 @@ Separe sempre **fato verificado** de **hipótese**. Cada achado precisa apontar 
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Auditoria — <recorte> — <data>
 - Versão do Playbook: <...>
@@ -43,6 +45,8 @@ Separe sempre **fato verificado** de **hipótese**. Cada achado precisa apontar 
 - Limitações da auditoria: <o que não foi possível verificar>
 - Próximo passo recomendado: <decisões que o desenvolvedor precisa tomar>
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Encontrei 5 pontos: 2 importantes (...) e 3 melhorias. Quer que eu corrija algum?"
 
 ## Limites
 - Auditoria não é aprovação de publicação nem autorização de alteração (COP-01 §16).

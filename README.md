@@ -10,7 +10,7 @@ Versão atual: veja [`docs/playbook/MANIFEST.md`](docs/playbook/MANIFEST.md).
 .
 ├── AGENTS.md              # instruções para qualquer assistente (Codex, Cursor, Copilot, Claude...)
 ├── CLAUDE.md              # adaptador do Claude Code (importa AGENTS.md)
-├── .claude/skills/        # links para Skills/, para o Claude Code descobrir as skills
+├── .claude/skills/        # cópia de Skills/, para o Claude Code descobrir as skills
 ├── Skills/                # as 7 skills operacionais (fonte única)
 │   ├── playbook-init/     # inicialização e diagnóstico
 │   ├── playbook-spec/     # interpretação, REQs e especificação
@@ -83,13 +83,13 @@ Copie `docs/playbook/` e `Skills/` para o projeto. Não sobrescreva `AGENTS.md` 
 
 | Assistente | Como encontra as instruções e skills |
 |---|---|
-| Claude Code | `CLAUDE.md` importa `AGENTS.md`; skills descobertas em `.claude/skills/` (links para `Skills/`) |
+| Claude Code | `CLAUDE.md` importa `AGENTS.md`; skills descobertas em `.claude/skills/` (cópia de `Skills/`) |
 | Assistentes que leem `AGENTS.md` | `AGENTS.md` lista cada skill e o caminho do `SKILL.md` a seguir |
 | Outros | Aponte o arquivo de instruções do assistente para `AGENTS.md` |
 
 Os arquivos `SKILL.md` usam o formato aberto de Agent Skills (cabeçalho com `name` e `description`). Mesmo um assistente sem suporte nativo a skills consegue segui-las lendo o arquivo indicado no `AGENTS.md`.
 
-**Windows:** `.claude/skills/` usa links simbólicos. Clone com `git clone -c core.symlinks=true` (requer modo de desenvolvedor ativo) ou, se os links não funcionarem, copie as pastas de `Skills/` para `.claude/skills/`. A fonte continua sendo `Skills/`.
+**`.claude/skills/`** é uma cópia de `Skills/` (funciona no Windows e em downloads ZIP). A fonte continua sendo `Skills/`: ao alterar uma skill, copie a pasta de novo para `.claude/skills/`.
 
 ## Atualizar a metodologia em um projeto
 
@@ -99,6 +99,6 @@ Cada projeto usa a cópia local da versão que adotou. Uma versão nova publicad
 
 - Antes de publicar uma versão, rode a [bateria de conformidade](conformidade/README.md), que testa os 18 cenários do COP-01 com um agente de verdade. A pasta `conformidade/` não precisa ir para os projetos.
 
-- Toda mudança em norma ou skill entra por pull request e atualiza a versão no `MANIFEST.md` e o [`CHANGELOG.md`](CHANGELOG.md).
+- Toda mudança em norma ou skill entra por pull request e atualiza a versão no `MANIFEST.md` e o [`CHANGELOG.md`](docs/playbook/CHANGELOG.md).
 - A versão mais alta de um documento substitui a anterior; versões antigas ficam no histórico do Git.
 - Skills não duplicam regras: quando uma norma mudar, confira se o roteiro da skill correspondente continua coerente.

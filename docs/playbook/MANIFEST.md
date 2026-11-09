@@ -1,6 +1,6 @@
 # MANIFEST — AI Development Playbook
 
-**Versão da distribuição:** 1.0.1  
+**Versão da distribuição:** 1.0.3  
 **Status da distribuição:** Aprovada. Todos os documentos listados estão aprovados.  
 **Fonte oficial:** repositório `ricardocfc/Playbook-de-desenvolvimento-assistido` no GitHub.  
 

@@ -39,6 +39,8 @@ Caminhos: `docs/playbook/desenvolvimento/` e `docs/playbook/arquitetura/`.
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Implementação — <REQ-NNN> <título>
 - Escopo executado: <tarefas concluídas> | Não executado: <tarefas e motivo>
@@ -51,6 +53,8 @@ Caminhos: `docs/playbook/desenvolvimento/` e `docs/playbook/arquitetura/`.
 - Recomendações fora do escopo: <lista>
 - Próximo passo recomendado: playbook-review
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Fiz a alteração em ... Ainda não conferi se funciona porque ...; esse é o próximo passo."
 
 ## Limites
 - Não declare validação nem publicação (COP-01 §12, T-06).

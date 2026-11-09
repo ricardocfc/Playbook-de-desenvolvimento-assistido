@@ -40,6 +40,8 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/desenvolvimento/`.
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Revisão — <REQ-NNN> <título>
 - Escopo: <conforme / desvios>
@@ -52,6 +54,8 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/desenvolvimento/`.
 - Aprovação humana necessária: <sim/não, o quê>
 - Próximo passo recomendado: <corrigir via playbook-implement | playbook-handoff>
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Conferi os 4 pontos combinados: 3 funcionam, 1 ainda não (motivo). Preciso que você ..."
 
 ## Limites
 - Não declare testes não executados nem aprove em nome do desenvolvedor (COP-01 §12).

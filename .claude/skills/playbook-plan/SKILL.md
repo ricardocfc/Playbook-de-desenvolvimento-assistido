@@ -52,6 +52,8 @@ Na **trilha curta** (baixo risco evidente, definido pelo `playbook-spec`), não 
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Plano — <REQ-NNN> <título>
 - Risco: <nível> — <justificativa> | Precedente usado: <nenhum / referência>
@@ -64,6 +66,8 @@ Na **trilha curta** (baixo risco evidente, definido pelo `playbook-spec`), não 
 - Autorizações necessárias: <aprovar plano; branch; commit; ...>
 - Próximo passo recomendado: playbook-implement, **após aprovação**
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Este é o plano: ... Os riscos são ... Se você aprovar, eu começo."
 
 ## Limites
 - Não execute o plano sem autorização aplicável (COP-01 §12, T-18).

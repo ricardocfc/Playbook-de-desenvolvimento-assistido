@@ -34,6 +34,8 @@ Separe sempre **fato verificado** de **hipótese**. Cada achado precisa apontar 
 
 ## Saída
 
+**Registro.** O bloco abaixo é o conteúdo mínimo que vai para os arquivos do projeto (REQ, sessão, relatório). Nele, identificadores e referências às normas são bem-vindos. **Não cole este bloco na conversa.**
+
 ```markdown
 ## Auditoria — <recorte> — <data>
 - Versão do Playbook: <...>
@@ -43,6 +45,8 @@ Separe sempre **fato verificado** de **hipótese**. Cada achado precisa apontar 
 - Limitações da auditoria: <o que não foi possível verificar>
 - Próximo passo recomendado: <decisões que o desenvolvedor precisa tomar>
 ```
+
+**Resposta ao desenvolvedor.** Siga "Como falar com o desenvolvedor" no `AGENTS.md`: palavras comuns, sem códigos de documentos nem nomes de skills. Diga o que foi feito, o que você precisa dele e o que dá para fazer em seguida. Exemplo: "Encontrei 5 pontos: 2 importantes (...) e 3 melhorias. Quer que eu corrija algum?"
 
 ## Limites
 - Auditoria não é aprovação de publicação nem autorização de alteração (COP-01 §16).
