@@ -33,6 +33,7 @@ Caminhos: `docs/playbook/produto/` e `docs/playbook/desenvolvimento/`.
    - validado → há evidência concreta;
    - implementado não validado → mudou, mas falta verificação;
    - não confirmado → investigado e não se materializou; registre a conclusão sem apresentá-lo como mudança ocorrida (T-05).
+   Atualize a **tabela de Impactos** da REQ com o novo estado e a evidência de cada linha. Não deixe a conclusão só no texto da validação.
 5. **Evidências (PROD-04 §13):** critério, método, resultado, data, ambiente, limitações. Vincule a testes, logs ou PR quando possível.
 6. **Registrar** os resultados na seção Validação da REQ.
 7. **Apresentar ao desenvolvedor** em linguagem acessível (PROD-04 §15) e pedir a aprovação funcional quando exigida.

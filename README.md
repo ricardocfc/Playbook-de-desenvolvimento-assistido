@@ -97,6 +97,8 @@ Cada projeto usa a cópia local da versão que adotou. Uma versão nova publicad
 
 ## Manutenção desta distribuição
 
+- Antes de publicar uma versão, rode a [bateria de conformidade](conformidade/README.md), que testa os 18 cenários do COP-01 com um agente de verdade. A pasta `conformidade/` não precisa ir para os projetos.
+
 - Toda mudança em norma ou skill entra por pull request e atualiza a versão no `MANIFEST.md` e o [`CHANGELOG.md`](CHANGELOG.md).
 - A versão mais alta de um documento substitui a anterior; versões antigas ficam no histórico do Git.
 - Skills não duplicam regras: quando uma norma mudar, confira se o roteiro da skill correspondente continua coerente.
